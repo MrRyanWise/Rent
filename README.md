@@ -18,8 +18,8 @@ expo start
 
 3) Création of an account in AWS(Amazon Web Services)
 
-Access key ID :   AKIA3TG4QAZFAAFOGW4E
-Secret Access Key : p1iNvzXlUxkgYW0Cq38c9es690Xzitn5TqimptK7
+Access key ID :    Your_Access key ID
+Secret Access Key :  Your_Secret Access Key
  
 Aws cli download
 click on the windows link and run and install it
