@@ -32,5 +32,22 @@ paste : amplify configure
 
 5) Code
 
+6) add dependencies in packages 
+yarn add @react-navigation/native
+or 
+expo install @react-navigation/native
 
+7) We are going to use React Container
+Create stack navigator :
+ expo install @react-navigation/stack
+
+import { NavigationContainer } from "@react-navigation/native";
+import { createStackNavigator } from "@react-navigation/stack";
+
+If you have a problem with your View component add :
+expo install react-native-safe-area-view react-native-safe-area-context
+
+or
+
+expo install react-native-gesture-handler
 

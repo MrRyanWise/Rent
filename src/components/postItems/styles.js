@@ -1,18 +1,19 @@
 import { StyleSheet } from "react-native";
+import { colors } from "../../modal/color";
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#ff8000",
+    // backgroundColor: "#fec85c60",
   },
   postWrap: {
     display: "flex",
     flexDirection: "row",
-    backgroundColor: "white",
-    marginVertical: 10,
+    backgroundColor: colors.white,
+    marginVertical: 5,
     marginHorizontal: 10,
     borderRadius: 10,
-    shadowColor: "#000",
+    shadowColor: colors.black,
     shadowOffset: { width: 0, height: 1 },
     shadowOpacity: 0.8,
     shadowRadius: 2,
@@ -31,14 +32,14 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   PostValue: {
-    color: "#fec85c",
-    backgroundColor: "#293241",
+    color: colors.primary,
+    backgroundColor: colors.secondary,
     alignSelf: "flex-start",
     padding: 5,
     borderRadius: 10,
   },
-  postPlace: { color: "grey" },
-  postTitle: { fontWeight: "bold" },
+  postPlace: { color: colors.grey },
+  postTitle: { fontWeight: colors.bold },
 });
 
 export default styles;
