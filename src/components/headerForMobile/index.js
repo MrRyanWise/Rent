@@ -12,7 +12,7 @@ const HeaderForMobile = () => {
         <View style={styles.searchByTextWrap}>
           <Feather name="search" size={24} color={colors.black} />
           <TextInput
-            placeholder="S earch in Rent.com"
+            placeholder="Search in Rent.com"
             style={styles.searchPlaceholder}
             multiline={false}
           />

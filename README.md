@@ -51,3 +51,8 @@ or
 
 expo install react-native-gesture-handler
 
+initialisation of the bottom tab :
+ npm install @react-navigation/bottom-tabs
+
+ Authentification : Amplify add auth
+ amplify init

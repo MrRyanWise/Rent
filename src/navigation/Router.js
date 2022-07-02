@@ -5,6 +5,8 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from "../screens/Home";
 import PostDetails from "../screens/postDetails";
+import { colors } from "../modal/color";
+import BottomTabNav from "./BottomTabNavigator";
 
 const Route = () => {
   {
@@ -13,10 +15,23 @@ const Route = () => {
   const Stack = createStackNavigator();
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
+      <Stack.Navigator
+        screenOptions={{
+          cardStyle: {
+            backgroundColor: colors.background,
+          },
+        }}>
+        <Stack.Screen
+          name="Home"
+          component={BottomTabNav}
+          options={{ headerShown: false }}
+        />
 
-        <Stack.Screen name="PostDetails" component={PostDetails} />
+        <Stack.Screen
+          name="PostDetails"
+          component={PostDetails}
+          options={{ headerShown: false }}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
